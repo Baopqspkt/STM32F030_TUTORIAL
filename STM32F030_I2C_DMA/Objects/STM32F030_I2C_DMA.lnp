@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\system_stm32f0xx.o"
+".\objects\startup_stm32f0xx.o"
+".\objects\stm32f0xx_dma.o"
+".\objects\stm32f0xx_i2c.o"
+".\objects\stm32f0xx_tim.o"
+".\objects\stm32f0xx_usart.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\STM32F030_I2C_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32F030_I2C_DMA.map" -o .\Objects\STM32F030_I2C_DMA.axf

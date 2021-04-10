@@ -1,0 +1,257 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: bao pham, abc, LIC=TIVNB-2FNAE-X76RZ-J1ELE-VHYEU-4P843
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+F:\Work\Arm\ST\STM32F030\KEIL_C\STM32F030_I2C_DMA\STM32F030_I2C_DMA.uvprojx
+Project File Date:  04/09/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'STM32F030_I2C_DMA'
+assembling startup_stm32f0xx.s...
+CMSIS/Device/ST/STM32F0xx/Source/Templates/system_stm32f0xx.c(99): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+CMSIS/Device/ST/STM32F0xx/Source/Templates/system_stm32f0xx.c(99): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+CMSIS/Device/ST/STM32F0xx/Source/Templates/system_stm32f0xx.c(132): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+CMSIS/Device/ST/STM32F0xx/Source/Templates/system_stm32f0xx.c(132): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+5 warnings generated.
+compiling system_stm32f0xx.c...
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_dma.c(71): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_dma.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_dma.c(71): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_dma.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+4 warnings generated.
+compiling stm32f0xx_dma.c...
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_i2c.c(79): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_i2c.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_i2c.c(79): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_i2c.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+4 warnings generated.
+compiling stm32f0xx_i2c.c...
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_usart.c(81): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_usart.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_usart.c(81): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_usart.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+4 warnings generated.
+compiling stm32f0xx_usart.c...
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(117): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_tim.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(117): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_tim.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(117): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc/stm32f0xx_tim.h(55): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(673): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(117): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc/stm32f0xx_tim.h(96): warning: padding struct 'TIM_OCInitTypeDef' with 2 bytes to align 'TIM_Pulse' [-Wpadded]
+  uint32_t TIM_Pulse;         /*!< Specifies the pulse value to be loaded into the Capture Compare Register. 
+           ^
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(1143): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_SET << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(1910): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_SET << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_tim.c(1940): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_SET << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+10 warnings generated.
+compiling stm32f0xx_tim.c...
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_rcc.c(58): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_rcc.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_rcc.c(58): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_rcc.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+4 warnings generated.
+compiling stm32f0xx_rcc.c...
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_gpio.c(76): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_gpio.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+STM32F0xx_StdPeriph_Driver/src/stm32f0xx_gpio.c(76): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_gpio.h(38): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+4 warnings generated.
+compiling stm32f0xx_gpio.c...
+User/main.c(7): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(127): warning: In file included from...
+./CMSIS/Include\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+User/main.c(7): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(479): warning: In file included from...
+./CMSIS/Include\core_cm0.h(585): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    SCB->SHP[_SHP_IDX(IRQn)] = (SCB->SHP[_SHP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    NVIC->IP[_IP_IDX(IRQn)] = (NVIC->IP[_IP_IDX(IRQn)] & ~(0xFF << _BIT_SHIFT(IRQn))) |
+                                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./CMSIS/Include\core_cm0.h(619): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+User/main.c(26): warning: no previous extern declaration for non-static variable 'timeout' [-Wmissing-variable-declarations]
+int32_t timeout = TIME_OUT;
+        ^
+User/main.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int32_t timeout = TIME_OUT;
+^
+User/main.c(27): warning: no previous extern declaration for non-static variable 'data_write_dma' [-Wmissing-variable-declarations]
+uint32_t data_write_dma = 0;
+         ^
+User/main.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t data_write_dma = 0;
+^
+User/main.c(7): warning: In file included from...
+./CMSIS/Device/ST/STM32F0xx/Include\stm32f0xx.h(5683): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_conf.h(53): warning: In file included from...
+./STM32F0xx_StdPeriph_Driver/inc\stm32f0xx_tim.h(55): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+7 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=3542 RO-data=242 RW-data=8 ZI-data=1640  
+".\Objects\STM32F030_I2C_DMA.axf" - 0 Error(s), 42 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\PC\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

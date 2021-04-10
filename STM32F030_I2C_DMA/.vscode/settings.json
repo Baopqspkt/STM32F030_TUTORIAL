@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "stm32f0xx_dma.h": "c",
+        "stm32f0xx_i2c.h": "c"
+    }
+}
