@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\startup_stm32f0xx.o"
+".\objects\stm32f0xx_dma.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_spi.o"
+".\objects\stm32f0xx_i2c.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_tim.o"
+".\objects\main.o"
+".\objects\system_stm32f0xx.o"
+--strict --scatter ".\Objects\STM32F030_SPI.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STM32F030_SPI.map" -o .\Objects\STM32F030_SPI.axf
