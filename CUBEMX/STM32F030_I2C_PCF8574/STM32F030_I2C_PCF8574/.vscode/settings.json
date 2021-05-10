@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "pcf85741.h": "c",
+        "rc522.h": "c"
+    }
+}
