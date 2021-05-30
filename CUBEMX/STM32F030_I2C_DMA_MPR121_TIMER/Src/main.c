@@ -37,7 +37,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_I2C1_Init(void);
-static void MX_USART1_UART_Init(void);
+//static void MX_USART1_UART_Init(void);
 static void MX_TIM3_Init(void);
 
 
@@ -46,15 +46,13 @@ int main(void)
   HAL_Init();
   SystemClock_Config();
   MX_GPIO_Init();
-  MX_DMA_Init();
+  //MX_DMA_Init();
   MX_I2C1_Init();
-  MX_USART1_UART_Init();
+  // MX_USART1_UART_Init();
   MX_TIM3_Init();
-	
-	HAL_TIM_Base_Start_IT(&htim3);
-
-  mpr121_int(&hi2c1);
-  printf("INIT MPR121 DONE \n\r");
+	mpr121_int(&hi2c1);
+	HAL_TIM_Base_Start_IT(&htim3); 
+  // printf("INIT MPR121 DONE \n\r");
   while (1)
   {
 
@@ -163,6 +161,7 @@ static void MX_I2C1_Init(void)
 /* TIM3 init function */
 // Init timer interrupt per 100ms
 // (48*10^6)*0.1(sec)/1000 = 4800
+
 static void MX_TIM3_Init(void)
 {
 
@@ -195,7 +194,9 @@ static void MX_TIM3_Init(void)
 
 }
 
+
 /* USART1 init function */
+/*
 static void MX_USART1_UART_Init(void)
 {
 
@@ -215,7 +216,7 @@ static void MX_USART1_UART_Init(void)
   }
 
 }
-
+*/
 /** 
   * Enable DMA controller clock
   */
