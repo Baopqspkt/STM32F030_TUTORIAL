@@ -1,2 +1,0 @@
-i2c.c:10:6:i2c_write	40	static
-i2c.c:16:9:i2c_read	48	static
